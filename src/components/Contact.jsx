@@ -2,77 +2,57 @@ export default function Contact() {
   return (
     <section
       id="contact"
-      className="py-20 px-16 flex flex-col md:flex-row items-center gap-10"
+      className="py-12 px-6 md:py-20 md:px-16 flex flex-col md:flex-row items-center gap-10"
     >
-      {/* Image */}
+      {/* IMAGE */}
       <img
         src="https://dev-vi-ka.github.io/cuate%20contact.jpg"
         alt="Contact"
-        className="w-full md:w-1/2 rounded-lg"
+        className="w-full md:w-1/2 rounded-lg object-cover"
       />
 
-      {/* Content */}
-      <div className="md:w-1/2">
-        {/* Heading */}
-        <h2 className="text-6xl font-bold text-left text-yellow-500">
+      {/* TEXT + FORM */}
+      <div className="w-full md:w-1/2">
+        <h2 className="text-2xl sm:text-sm md:text-6xl font-bold text-yellow-500 mb-4">
           Get in Touch
         </h2>
 
-        {/* Form */}
-        <form className="max-w-md mt-10">
-
-          <div className="relative z-0 w-full mb-5 group">
-            <input
-              type="email"
-              id="floating_email"
-              className="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-400 appearance-none focus:outline-none focus:border-yellow-500 peer"
-              placeholder=" "
-              required
-            />
-            <label
-              htmlFor="floating_email"
-              className="absolute text-sm text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:text-yellow-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:-translate-y-6"
-            >
-              Email address
-            </label>
-          </div>
-
-          <div className="relative z-0 w-full mb-5 group">
-            <input
+        {/* FORM */}
+        <form action="https://getform.io/f/bolqglqa" method="POST"
+        className="max-w-md w-full space-y-5">
+          {/* Name */}
+          <div className="relative z-0 w-full group">
+            <input name="name"
               type="text"
-              id="floating_first_name"
-              className="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-400 appearance-none focus:outline-none focus:border-yellow-500 peer"
-              placeholder=" "
               required
+              placeholder="Your Name"
+              className="peer block py-2.5 w-full bg-transparent border-b-2 border-gray-400 focus:border-black outline-none"
             />
-            <label
-              htmlFor="floating_first_name"
-              className="absolute text-sm text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:text-yellow-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:-translate-y-6"
-            >
-              Your Name
-            </label>
+            
           </div>
 
-          <div className="relative z-0 w-full mb-5 group">
-            <textarea
-              id="floating_message"
-              rows="3"
-              className="block py-2.5 px-0 w-full text-sm bg-transparent border-0 border-b-2 border-gray-400 appearance-none focus:outline-none focus:border-yellow-500 peer"
-              placeholder=" "
+          {/* Email */}
+          <div className="relative z-0 w-full group">
+            <input
+              type="email" name="email"
               required
-            ></textarea>
-            <label
-              htmlFor="floating_message"
-              className="absolute text-sm text-gray-600 duration-300 transform -translate-y-6 scale-75 top-3 origin-[0] peer-focus:text-yellow-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:-translate-y-6"
-            >
-              Your Message
-            </label>
+              placeholder="Email address"
+              className="peer block py-2.5 w-full bg-transparent border-b-2 border-gray-400 focus:border-black outline-none"
+            />
+            
           </div>
 
-          <button
-            type="submit"
-            className="text-white bg-yellow-500 hover:bg-yellow-600 transition font-medium rounded-lg text-sm px-6 py-3 mt-4"
-          >
+          {/* Message */}
+          <div className="relative z-0 w-full group">
+            <textarea name="message"
+              required
+              placeholder="Your Message"
+              className="peer block py-2.5 w-full bg-transparent border-b-2 border-gray-400 focus:border-black outline-none resize-none h-32"
+            />
+           
+          </div>
+
+          <button className="mt-4 bg-yellow-500 text-white px-4 py-2 rounded hover:bg-yellow-600">
             Submit
           </button>
         </form>
