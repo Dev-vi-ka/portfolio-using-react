@@ -4,38 +4,34 @@ import "./timeline.css";
 export default function TimelineSection() {
 
   const education = [
+    
     {
-      year: "2018 - 2022",
-      title: "High School Degree",
-      description: "Completed high school with focus on science."
+      year: "2023 - Now",
+      title: "Bachelor's Degree(BCA)",
+      description: "Kristu Jyoti College of Management and Technology, MG University"
     },
     {
-      year: "2022 - 2025",
-      title: "Bachelor's Degree",
-      description: "Studying Computer Science."
-    },
-    {
-      year: "2025 - 2027",
-      title: "Master Degree",
-      description: "Specialization in AI."
+      year: "2022- 2023",
+      title: "High School Diploma",
+      description: "St. John the Baptist CBSE School, Nedumkunnam"
     }
   ];
 
   const experience = [
     {
-      year: "2023",
-      title: "UI/UX Designer",
-      description: "Worked on modern UI systems."
+      year: "September 2025 – present",
+      title: "Project Coordinator Associate",
+      description: "µLearn Foundation"
     },
     {
-      year: "2024",
-      title: "Full Stack Developer",
-      description: "Built scalable applications."
+      year: "July 2023 – March 2025",
+      title: "Women in Tech Lead (Former Design Intern)",
+      description: "Inovus Labs IEDC, KJCMT"
     },
     {
-      year: "2025",
-      title: "Frontend Developer",
-      description: "Focused on React performance."
+      year: "June 2024 – April 2025",
+      title: "Volunteer",
+      description: "TEDx KCMT"
     }
   ];
 
